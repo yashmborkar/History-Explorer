@@ -1,1 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+
+/*navbar*/
+header{
+    background-color: rgb(42, 42, 42);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+.logo{
+    color: rgb(223, 143, 15);
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.navbar>ul{
+    list-style: none;
+    display: flex;
+}
+.navbar>ul>li{
+    margin-right: 30px;
+}
+
+.navbar ul>li>a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+.navbar>ul>li>a:hover{
+    color: rgb(212, 161, 30);
+}
+
+
+/*hero section*/
+.hero{
+    background-image: url("/bg.jpeg");
+    background-size: cover;
+    background-position: center;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+.hero h1{
+    text-shadow: 10px 10px 20px black;
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero p{
+    text-shadow: 5px 5px 10px black;
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+.hero .button1{
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: rgb(223, 143, 15);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-color: none;
+    border: none;
+    margin-right: 10px;
+}
+.hero .button2{
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: rgb(223, 143, 15);
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    border-color: none;
+    border: none;
+}
+.hero .button1:hover{
+    background-color: rgb(237, 170, 0);
+}
+.hero .button2:hover{
+    background-color: rgb(237, 170, 0);
+}
+
+/* era section*/
+#ancient{
+    background-color: rgb(176, 141, 87);  
+}
+
+#medieval{
+    background-color: rgb(91, 112, 135);
+}
+
+#renaissance{
+    background-color: rgb(155, 74, 74);
+}
+
+#modern{
+   background-color: rgb(68, 68, 68);
+}
+
+.era-section{
+    width: 100vw;
+    margin: 0 auto 0px auto;
+    background-color: black;
+    text-align: center;
+    display: block;
+    height: 200px;
+    padding: 80px 20px;
+    text-align: center;
+    color: #fff;
+    font-family: 'Georgia', serif;
+    text-shadow: 10px 10px 20px black;
+}
+
+
+/*footer*/
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
